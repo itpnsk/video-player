@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;  
+    height: 100vh;
+}
+
+video {
+    background-color: black;
+    width: 854px;
+    height: 480px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.controls {
+    background-color: black;
+    width: 854px;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 50px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+button {
+    background: transparent;
+    border: none;
+    padding: 10px;
+}
+
+#playIcon {
+    color: green;
+}
+
+.fa-stop {
+    color: red;
+}
+
+#timer {
+    color: white;
+    padding: 10px;
+}
+
+@media (max-width: 800px) {
+    video, .controls {
+        width: 90%;
+    }
+    
+}

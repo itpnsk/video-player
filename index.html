@@ -10,14 +10,33 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/assets/css/progress.css">
-        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./assets/css/progress.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+            <video src="assets/video/gone.mp4" poster="assets/img/poster.png" id="video"></video>
+
+            <div class="controls">
+                <button id="play">
+                    <i class="fas fa-play fa-2x" id="playIcon"></i>
+                    <!-- <i class="fas fa-pause"></i> -->
+                </button>
+
+                <button id="pause">
+                    <i class="fas fa-stop fa-2x"></i>
+                </button>
+
+                <input type="range" class="progress" id="progress" min="0" max="100" step="1" value="0">
+
+                <span id="timer">00:00</span>
+
+            </div>
+
         
-        <script src="/assets/js/script.js" async defer></script>
+        <script src="./assets/js/script.js" async defer></script>
     </body>
 </html>
